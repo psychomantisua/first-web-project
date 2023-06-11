@@ -10,29 +10,29 @@
 </head>
 <body>
     <header class="header">
-        <Nav>
+        <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Product</a>
             <a href="#">Pricing</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-        </Nav>
+        </nav>
         <img src="img/figmaland.png" alt="figmaland logo">
         <img src="img/twitter.png" alt="twitter">
         <img src="img/facebook.png" alt="facebook">
         <img src="img/linkedin.png" alt="linkedin">
         <div>
             <h1 style="color: white;">The best products start with Figma</h1>
-            <h4 style="color: white;">Most calendars are designed for teams. Slate is designed for freelancers</h4>
+            <p style="color: white;">Most calendars are designed for teams. Slate is designed for freelancers</p>
         </div>
-        <button>Try For Free</button>
+        <a href="#">Try for free</a>
     </header>
     <main>
-        <div id="section1">
-            <h2>Features</h2>
-            <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
-            <div>
-                <div>
+        <section class="features">
+            <h2 class="features__title">Features</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="features__elements">
+                <div class="features__elements-item">
                     <img src="img/square_and_circle.png" alt="square and circle">
                     <h3>OpenType features Variable fonts</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
@@ -48,61 +48,57 @@
                     <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
             </div>
-            <div>
+            <div class="features__video">
                 <video src="#" controls poster="img/screen.png"></video>
             </div>
-        </div>
-        <div id="section2">
-            <div>
-                <div>
+        </section>
+        <section class="organize">
+            <div class="organize__content">
+                <div class="organize__content-left">
                     <h2>Fastest way to organize</h2>
-                    <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
-                    <button>Try For Free</button>
+                    <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+                    <a href="#">Try for free</a>
                 </div>
-                <div>
+                <div class="organize__content-right">
                     <img src="img/MacbookPro.png" alt="Macbook">
                 </div>
             </div>
-        </div>
-        <div id="section3">
-            <div>
+        </section>
+        <section class="subscription">
+            <div class="subscription__form">
                 <img src="img/undraw_newsletter.png" alt="undraw_newsletter">
-            </div>
-            <div>
-                <h3>At your fingertips</h3>
-                <h2>Lightning fast prototyping</h2>
-                <h3>Subscribe to our Newsletter</h3>
+                <p>At your fingertips</p>
+                <p>Lightning fast prototyping</p>
+                <p>Subscribe to our Newsletter</p>
                 <p>Available exclusivery on Figmaland</p>
                 <form action="submit" method="post">
                     <input type="text" placeholder="Your Email">
                     <input type="button" value="Subscribe">
                 </form>
             </div>
-        </div>
-        <div id="section4">
-            <div>
-                <h2>Partners</h2>
-                <h4>Most calendars are designed for teams. Slate is designed for freelancers</h4>
-            </div>
-            <div>
+        </section>
+        <section class="partners">
+            <h2 class="partners__title">Partners</h2>
+            <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
+            <div class="partners__top-row">
                 <div>
-                    <div>
-                        <h6>Client Name</h6>
-                        <img src="img/google.png" alt="google logo">
-                    </div>
-                    <div>
-                        <h6>Client Name</h6>
-                        <img src="img/amazon.png" alt="amazon logo">
-                    </div>
-                    <div>
-                        <h6>Client Name</h6>
-                        <img src="img/microsoft.png" alt="microsoft logo">
-                    </div>
-                    <div>
-                        <h6>Client Name</h6>
-                        <img src="img/uber.png" alt="uber logo">
-                    </div>
+                    <h6>Client Name</h6>
+                    <img src="img/google.png" alt="google logo">
                 </div>
+                <div>
+                    <h6>Client Name</h6>
+                    <img src="img/amazon.png" alt="amazon logo">
+                </div>
+                <div>
+                    <h6>Client Name</h6>
+                    <img src="img/microsoft.png" alt="microsoft logo">
+                </div>
+                <div>
+                    <h6>Client Name</h6>
+                    <img src="img/uber.png" alt="uber logo">
+                </div>
+            </div>
+            <div class="partners__bottom-row">
                 <div>
                     <h6>Client Name</h6>
                     <img src="img/dropbox.png" alt="dropbox logo">
@@ -120,33 +116,46 @@
                     <img src="img/amazon.png" alt="amazon logo">
                 </div>
             </div>
-            <button>Try For Free</button>
-        </div>
-        <div id="section5">
-            <h2>Testimonials</h2>
-            <div>
-                <img src="img/ibm.png" alt="ibm logo">
-                <h4>Most calendars are designed for teams. Slate is designed for freelancers
-                    who want a simple way to plan their schedule.
-                </h4>
-                <img src="img/avatar.png" alt="avatar">
-                <h6>Organize across</h6>
-                <a href="#">Ui designer</a>
-                <button>More Testimonials</button>
-            </div>
-        </div>
-        <div id="section6">
-            <h2>Pricing</h2>
-            <h4>Most calendars are designed for teams. 
+            <a href="#">Try for free</a>
+        </section>
+        <section class="testimonials">
+            <h2 class="testimonials__title">Testimonials</h2>
+            <img class="testimonials__logo" src="img/ibm.png" alt="ibm logo">
+            <p>Most calendars are designed for teams. Slate is designed for freelancers
+                who want a simple way to plan their schedule.
+            </p>
+            <img class="testimonials__avatar" src="img/avatar.png" alt="avatar">
+            <p>Organize across</p>
+            <a href="#">Ui designer</a>
+            <a href="#">Testimonials</a>
+        </section>
+        <section class="pricing">
+            <h2 class="pricing__title">Pricing</h2>
+            <p>Most calendars are designed for teams. 
                 Slate is designed for freelancers
-            </h4>
-            <div>
-                <h3>FREE</h3>
-                <h6>Organize across all apps by hand</h6>
+            </p>
+            <div class="pricing__free">
+                <h3 class="pricing__free-title">FREE</h3>
+                <p>Organize across all apps by hand</p>
                 <div>
-                    <h1>0</h1>
-                    <h3>$</h3>
-                    <h6>Per Month</h6>
+                    <p><span class="price">0</span>$</p>
+                    <p>Per Month</p>
+                </div>
+                <ul class="pricing_feature">
+                    <li>Pricing Feature</li>
+                    <li>Pricing Feature</li>
+                    <li>Pricing Feature</li>
+                    <li>Pricing Feature</li>
+                    <li>Pricing Feature</li>
+                </ul>
+                <a href="#">Order Now</a>
+            </div>
+            <div class="pricing__standard">
+                <h3 class="pricing__standard-title">STANDARD</h3>
+                <p>Organize across all apps by hand</p>
+                <div>
+                    <p>10 $</p>
+                    <p>Per Month</p>
                 </div>
                 <ul>
                     <li>Pricing Feature</li>
@@ -155,121 +164,94 @@
                     <li>Pricing Feature</li>
                     <li>Pricing Feature</li>
                 </ul>
-                <button>Order Now</button>
+                <a href="#">Order Now</a>
             </div>
-            <div>
-                <h3>STANDARD</h3>
-                <h6>Organize across all apps by hand</h6>
-                <div>
-                    <h1>10</h1>
-                    <h3>$</h3>
-                    <h6>Per Month</h6>
-                </div>
-                <ul>
+            <div class="pricing__business">
+                <h3 class="pricing__business-title">BUSINESS</h3>
+                <p>Organize across all apps by hand</p>
+                <p><span class="price">99</span>$</p>
+                <p>Per Month</p>
+                <ul class="pricing_feature">
                     <li>Pricing Feature</li>
                     <li>Pricing Feature</li>
                     <li>Pricing Feature</li>
                     <li>Pricing Feature</li>
                     <li>Pricing Feature</li>
                 </ul>
-                <button>Order Now</button>
+                <a href="#">Order Now</a>
             </div>
-            <div>
-                <h3>BUSINESS</h3>
-                <h6>Organize across all apps by hand</h6>
-                <div>
-                    <h1>99</h1>
-                    <h3>$</h3>
-                    <h6>Per Month</h6>
-                </div>
-                <ul>
-                    <li>Pricing Feature</li>
-                    <li>Pricing Feature</li>
-                    <li>Pricing Feature</li>
-                    <li>Pricing Feature</li>
-                    <li>Pricing Feature</li>
-                </ul>
-                <button>Order Now</button>
-            </div>
-        </div>
-        <div id="section7">
-            <h2>Contact Us</h2>
-            <h4>Most calendars are designed for teams. 
+        </section>
+        <section class="contacts">
+            <h2 class="contacts__title">Contact Us</h2>
+            <p>Most calendars are designed for teams. 
                 Slate is designed for freelancers
-            </h4>
-            <div>
-                <div>
-                    <h3>Contact Us</h3>
-                    <form action="submit">
-                        <input type="text" placeholder="Your Name">
-                        <input type="text" placeholder="Your Email">
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                        <input type="button" value="Send">
-                    </form>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="img/lable.png" alt="lable">
-                            <h6>6386 Spring St undefined Anchorage, 
-                                Georgia 12473 United States
-                            </h6>
-                        </div>
-                        <div>
-                            <img src="img/phone.png" alt="phone">
-                            <h6>(843) 555-0130</h6>
-                        </div>
-                        <div>
-                            <img src="img/mail.png" alt="phone">
-                            <h6>willie.jennings@example.com</h6>
-                        </div>
+            </p>
+            
+            <div class="contacts__form">
+                <h3 class="contacts__form-title">Contact Us</h3>
+                <form action="submit">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="button" value="Send">
+                </form>
+            </div class="contacts__map">
+                <div class="contacts__map-phones">
+                    <div class="contacts__map-phones-item">
+                        <img src="img/lable.png" alt="lable">
+                        <p>6386 Spring St undefined Anchorage, 
+                            Georgia 12473 United States
+                        </p>
                     </div>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118930.22952136435!2d-157.88147498858157!3d21.32801372465446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00183b8cc3464d%3A0x4b28f55ff3a7976c!2z0JPQvtC90L7Qu9GD0LvRgywg0JPQsNCy0LDRlywg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1685916339186!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <div>
-                            <img src="img/twitter.png" alt="twitter" style="background-color:#2091F9;">
-                            <img src="img/facebook.png" alt="facebook" style="background-color:#2091F9;">
-                            <img src="img/linkedin.png" alt="linkedin" style="background-color:#2091F9;">
-                        </div>
+                    <div class="contacts__map-phones-item">
+                        <img src="img/phone.png" alt="phone">
+                        <p>(843) 555-0130</p>
+                    </div>
+                    <div class="contacts__map-phones-item">
+                        <img src="img/mail.png" alt="phone">
+                        <p>willie.jennings@example.com</p>
+                    </div>
+                </div>
+                <div class="contacts__map-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118930.22952136435!2d-157.88147498858157!3d21.32801372465446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00183b8cc3464d%3A0x4b28f55ff3a7976c!2z0JPQvtC90L7Qu9GD0LvRgywg0JPQsNCy0LDRlywg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1685916339186!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contacts__map-map-socials">
+                        <img src="img/twitter.png" alt="twitter" style="background-color:#2091F9;">
+                        <img src="img/facebook.png" alt="facebook" style="background-color:#2091F9;">
+                        <img src="img/linkedin.png" alt="linkedin" style="background-color:#2091F9;">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <footer style="background-color: #252B42;">
-        <div id="menu">
-            <div>
-                <h3>Pages</h3>
-                <menu>
-                        <li>Home</li>
-                        <li>Product</li>
-                        <li>Pricing</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                </menu>
-            </div>
-            <div>
-                <h3>Tomothy</h3>
-                <menu>
-                        <li>Eleanor Edwards</li>
-                        <li>Ted Robertson</li>
-                        <li>Annette Russell</li>
-                        <li>Jennie Mckinney</li>
-                        <li>Gloria Richards</li>
-                </menu>
-            </div>
-            <div>
-                <h3>Jane Black</h3>
-                <menu>
-                        <li>Philip Jones</li>
-                        <li>Product</li>
-                        <li>Colleen Russell</li>
-                        <li>Marvin Hawkins</li>
-                        <li>Bruce Simmmons</li>
-                </menu>
-            </div>
+    <footer class="footer" style="background-color: #252B42;">
+        <div class="foter__menu">
+            <h3 class="footer__menu-title">Pages</h3>
+            <menu>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </menu>
+
+            <h3 class="footer__menu-title">Tomothy</h3>
+            <menu>
+                    <li>Eleanor Edwards</li>
+                    <li>Ted Robertson</li>
+                    <li>Annette Russell</li>
+                    <li>Jennie Mckinney</li>
+                    <li>Gloria Richards</li>
+            </menu>
+            <h3 class="footer__menu-title">Jane Black</h3>
+            <menu>
+                    <li>Philip Jones</li>
+                    <li>Product</li>
+                    <li>Colleen Russell</li>
+                    <li>Marvin Hawkins</li>
+                    <li>Bruce Simmmons</li>
+            </menu>
         </div>
-        <div id="Contact">
+        <div class="footer__contacts">
             <div>
                 <img src="img/lable.png" alt="lable">
                 <span>7480 Mockingbird Hill undefined</span>
